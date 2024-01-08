@@ -110,8 +110,8 @@ def filtered_tree(tree, data):
 def build_ul(request, coghits, clade):
     lis = []
     for child in clade.clades:
-        if child == clade:
-            continue
+        # if child == clade:
+        #     continue
         if isinstance(coghits, dict):
             if child.name in coghits:
                 cognates = coghits[child.name].cognates

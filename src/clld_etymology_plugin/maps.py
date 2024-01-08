@@ -13,4 +13,5 @@ class CognatesetMap(Map):
             "info_query": {"cognateset": self.ctx.pk},
             "hash": True,
             "max_zoom": 19,
+            "base_layer": 'OpenTopoMap'
         }
