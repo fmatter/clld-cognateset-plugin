@@ -1,12 +1,25 @@
 from clld.db.meta import Base, CustomModelMixin, PolymorphicBaseMixin
 from clld.db.models import HasSourceMixin, IdNameDescriptionMixin, common
 from clld.db.models.common import Contribution
-from sqlalchemy import (Boolean, Column, ForeignKey, Integer, String, Unicode,
-                        UniqueConstraint, orm)
+from sqlalchemy import (
+    Boolean,
+    Column,
+    ForeignKey,
+    Integer,
+    String,
+    Unicode,
+    UniqueConstraint,
+    orm,
+)
 from sqlalchemy.orm import backref, relationship
 from zope.interface import implementer
 
-from clld_etymology_plugin.interfaces import ICognateset, ITree, IUnitCognate, IBorrowing
+from clld_etymology_plugin.interfaces import (
+    IBorrowing,
+    ICognateset,
+    ITree,
+    IUnitCognate,
+)
 
 
 @implementer(ICognateset)
@@ -48,6 +61,7 @@ class UnitCognate(Base):
 @implementer(ITree)
 class Tree(Base, PolymorphicBaseMixin, IdNameDescriptionMixin):
     newick = Column(Unicode)
+
 
 @implementer(IBorrowing)
 class Borrowing(Base, IdNameDescriptionMixin):

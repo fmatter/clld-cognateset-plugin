@@ -1,12 +1,20 @@
-from clld.web.datatables.base import Col, DataTable, LinkCol
-from clld.db.util import get_distinct_values, icontains
 from clld.db.models.common import Contribution, Language, Source, Unit
+from clld.db.util import get_distinct_values, icontains
+from clld.web.datatables.base import Col, DataTable, LinkCol
+from clld.web.util.helpers import (
+    JS_CLLD,
+    JSDataTable,
+    button,
+    external_link,
+    icon,
+    link,
+    linked_references,
+)
 from clld.web.util.htmllib import HTML, literal
 from sqlalchemy.orm import aliased, joinedload
-from clld.web.util.helpers import (JS_CLLD, JSDataTable, button, external_link,
-                                   icon, link, linked_references)
 
 from clld_etymology_plugin.models import Borrowing
+
 
 class Cognatesets(DataTable):
     def col_defs(self):

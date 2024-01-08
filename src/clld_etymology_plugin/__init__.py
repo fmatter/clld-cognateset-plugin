@@ -1,5 +1,4 @@
-from clld_etymology_plugin import (adapters, datatables, interfaces, maps,
-                                    models)
+from clld_etymology_plugin import adapters, datatables, interfaces, maps, models
 
 
 def includeme(config):
