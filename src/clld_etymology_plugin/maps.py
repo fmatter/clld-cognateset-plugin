@@ -12,4 +12,5 @@ class CognatesetMap(Map):
             "show_labels": True,
             "info_query": {"cognateset": self.ctx.pk},
             "hash": True,
+            "max_zoom": 19,
         }
