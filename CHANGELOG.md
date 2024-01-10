@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * OpenTopoMap
+* translations
 
 ### Fixed
 * zoom in maps
+* no `None` comments
 
 ## [0.1.0] - 2023-XX-XX
 
