@@ -12,6 +12,7 @@ class CognatesetMap(Map):
             "show_labels": True,
             "info_query": {"cognateset": self.ctx.pk},
             "hash": True,
-            "max_zoom": 19,
-            "base_layer": 'OpenTopoMap'
+            "max_zoom": 10,
+            # "base_layer": 'OpenTopoMap'
+            "base_layer": "USGS.USTopo",
         }

@@ -42,7 +42,7 @@ def lfts(request, form, lng=True, ftr=True, src=True, pre_f=""):
         lis.extend([link(request, form.language), " "])
     lis.extend([pre_f, link(request, form)])
     if ftr:
-        lis.extend([" ‘", form.meanings[0].meaning, "’"])
+        lis.extend([" ‘", link(request, form.meanings[0].meaning), "’"])
     return HTML.span(*lis)
 
 

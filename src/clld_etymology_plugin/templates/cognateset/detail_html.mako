@@ -1,7 +1,7 @@
 <%inherit file="../${context.get('request').registry.settings.get('clld.app_template', 'app.mako')}"/>
 <%namespace name="util" file="../util.mako"/>
 
-<%! from clld_etymology_plugin.util import build_tree, etymology %>
+<%! from clld_etymology_plugin.util import build_tree, etymology, lfts %>
 <%! active_menu_item = "cognatesets" %>
 
 ## <%def name="sidebar()">
@@ -59,7 +59,7 @@
         <th>Language</th>
         <th>Alignment</th>
     </%def>
-    <td>${h.link(request, item.counterpart)}</td>
+    <td>${lfts(request, item.counterpart, lng=False)}</td>
     <td>${h.link(request, item.counterpart.language)}</td>
     <td>
         <span class="alignment">${item.alignment}</span>

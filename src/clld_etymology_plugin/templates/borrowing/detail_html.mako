@@ -14,10 +14,12 @@
                 <td> Recipient: </td>
                 <td> ${h.link(request, ctx.recipient.language)} <i>${h.link(request, ctx.recipient)}</i> ‘${h.link(request, ctx.recipient.meanings[0].meaning)}’ </td>
             </tr>
-            <tr>
-                <td> Comment: </td>
-                <td> ${ctx.comment} </td>
-            </tr> 
+            % if ctx.comment:
+                <tr>
+                    <td> Comment: </td>
+                    <td> ${ctx.comment} </td>
+                </tr>
+            % endif 
     </tbody>
 </table>
 
