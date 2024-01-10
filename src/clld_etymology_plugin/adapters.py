@@ -1,5 +1,6 @@
 from clld import interfaces
 from clld.web.adapters.geojson import GeoJson
+from clld.web.util.helpers import link
 
 # https://github.com/clld/clld-cognacy-plugin/blob/42c0cd4beee392d14e698bf6430bbb4c4e2f33ad/src/clld_cognacy_plugin/adapters.py#L10
 

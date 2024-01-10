@@ -188,3 +188,5 @@ def build_tree(request, cogset, mode="cogset"):
             return build_ul(request, coghits, new_tree.root)
         return ""
     return HTML.div("No trees in database.")
+
+
