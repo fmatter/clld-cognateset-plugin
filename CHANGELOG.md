@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2024-01-10
+
 ## [0.1.1] - 2024-01-08
 
 ### Changed
@@ -21,5 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Initial release
 
 [Unreleased]: https://github.com/fmatter/clld-etymology-plugin/compare/v0.0.1...HEAD
+[0.1.2]: https://github.com/fmatter/clld-etymology-plugin/compare/v0.0.1...v0.0.1
 [0.1.1]: https://github.com/fmatter/clld-etymology-plugin/compare/v0.0.1...v0.0.1
 [0.1.0]: https://github.com/fmatter/clld-etymology-plugin/commit/insert_this_by_hand
